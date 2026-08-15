@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header class="header">
+          <h1 class="heading">🎬 Cine Search</h1>
+          <p class="sub-heading">Discover your next favorite movie</p>
+        </header>
+
+        <form class="search-container">
+          <label for="search-input">Movie</label>
+
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Search Movies..."
+              id="search-input"
+            />
+            <button type="submit" id="search-button">Search</button>
+          </div>
+        </form>
+
+        <section class="movie-data hidden">
+          <!-- Movie details will be inserted here -->
+        </section>
+
+        <!--FEATURED MOVIES (Displayed before search happens)-->
+        <section class="featured-section">
+          <h2 class="section-title">Featured Movies</h2>
+
+          <div class="loader hidden"></div>
+          <div class="movies-container">
+            <!--The Movie cards go here-->
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
