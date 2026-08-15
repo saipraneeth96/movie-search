@@ -132,8 +132,6 @@ searchForm.addEventListener("submit", searchHandler);
 
 // Search OMDb and return a list of movies.
 // Handling search results of APi Key
-// OMDB API - https://www.omdbapi.com/?apikey=YOUR_KEY&s=Batman
-// MY KEY - http://www.omdbapi.com/?i=tt3896198&apikey=66faaf80
 const searchMovies = async function (movieName) {
   const response = await fetch(`${BASE_URL}?apikey=${API_KEY}&s=${movieName}`);
   if (!response.ok) throw new Error("Failed to fetch movies.");
