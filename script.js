@@ -1,4 +1,5 @@
-const API_KEY = "YOUR_API_KEY";
+// Use you own API key
+const API_KEY = "66faaf80";
 const BASE_URL = "https://www.omdbapi.com/";
 
 const featuredMovies = [
